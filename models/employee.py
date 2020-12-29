@@ -3,7 +3,7 @@ from odoo import fields, models
 
 
 class Employee(models.Model):
-    _inherit = 'hr.employee'
+    _inherit = 'hr.employee.skill'
 
     release_date = fields.Date(string="Release Date")
     expiration_date = fields.Date(string="Expiration Date")
