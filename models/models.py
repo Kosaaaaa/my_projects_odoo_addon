@@ -18,6 +18,6 @@ class Task(models.Model):
     name = fields.Char(string='Task name', required=True)
     description = fields.Text()
     created_date = fields.Date(default=lambda self: fields.Date.today(), readonly=True)
-    due_date = fields.Date(required=True)
+    due_date = fields.Date()
     is_completed = fields.Boolean(default=False, string='Completed')
     project_id = fields.Many2one('my_projects.project', ondelete='cascade', string='Project', required=True)
