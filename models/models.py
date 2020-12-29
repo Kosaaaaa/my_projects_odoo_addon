@@ -20,4 +20,4 @@ class Task(models.Model):
     created_date = fields.Date(default=lambda self: fields.Date.today(), readonly=True)
     due_date = fields.Date(required=True)
     is_completed = fields.Boolean(default=False, string='Completed')
-    project_id = fields.Many2one('my_projects.project', ondelete='cascade', string='Project')
+    project_id = fields.Many2one('my_projects.project', ondelete='cascade', string='Project', required=True)
