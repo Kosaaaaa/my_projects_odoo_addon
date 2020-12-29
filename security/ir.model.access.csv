@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_my_projects_my_projects,my_projects.my_projects,model_my_projects_my_projects,base.group_user,1,1,1,1
+projects_manager,projects_manager,model_my_projects_project,base.group_user,1,1,1,1
+tasks_manager,tasks_manager,model_my_projects_task,base.group_user,1,1,1,1
