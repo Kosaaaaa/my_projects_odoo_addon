@@ -10,6 +10,7 @@ class Project(models.Model):
     description = fields.Text()
     created_date = fields.Date(default=lambda self: fields.Date.today(), readonly=True)
 
+
 class Task(models.Model):
     _name = 'my_projects.task'
     _description = 'My Projects Task Model'
