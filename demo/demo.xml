@@ -1,30 +1,28 @@
 <odoo>
     <data>
-<!--
-          <record id="object0" model="my_projects.my_projects">
-            <field name="name">Object 0</field>
-            <field name="value">0</field>
-          </record>
+        <record id="project0" model="my_projects.project">
+            <field name="name">Project demo 1</field>
+            <field name="description">Project demo 1 description</field>
+            <field name="created_date">2020-12-01</field>
+        </record>
+        <record id="project1" model="my_projects.project">
+            <field name="name">Project demo 2</field>
+            <field name="description">Project demo 2 description</field>
+            <field name="created_date">2020-12-03</field>
+        </record>
+        <record id="project2" model="my_projects.project">
+            <field name="name">Project demo 3</field>
+            <field name="description">Project demo 3 description</field>
+            <field name="created_date">2020-12-25</field>
+        </record>
 
-          <record id="object1" model="my_projects.my_projects">
-            <field name="name">Object 1</field>
-            <field name="value">10</field>
-          </record>
-
-          <record id="object2" model="my_projects.my_projects">
-            <field name="name">Object 2</field>
-            <field name="value">20</field>
-          </record>
-
-          <record id="object3" model="my_projects.my_projects">
-            <field name="name">Object 3</field>
-            <field name="value">30</field>
-          </record>
-
-          <record id="object4" model="my_projects.my_projects">
-            <field name="name">Object 4</field>
-            <field name="value">40</field>
-          </record>
--->
+        <record id="task0" model="my_projects.task">
+            <field name="name">Task demo 1</field>
+            <field name="description">Task demo 1 description</field>
+            <field name="created_date">2020-12-25</field>
+            <field name="due_date">2020-12-30</field>
+            <field name="is_completed">False</field>
+            <field name="project_id" ref="project0" />
+        </record>
     </data>
 </odoo>
